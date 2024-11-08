@@ -14,8 +14,10 @@ using System.Data.SqlClient;
 
 AdoDotNetExample adoDotNetExample = new AdoDotNetExample();
 
-adoDotNetExample.Read();
+//adoDotNetExample.Read();
 //adoDotNetExample.Create("title", "author", "content");
-
+//adoDotNetExample.Update(1, "updated title", "updated author", "updated content");
+//adoDotNetExample.Delete(1);
+//adoDotNetExample.Edit(1);
 
 Console.ReadKey();
