@@ -11,6 +11,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Documents", "Documents", "{
 		README.md = README.md
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DMMDotNetCore.RestApi", "DMMDotNetCore.RestApi\DMMDotNetCore.RestApi.csproj", "{EA4FB5D0-FDA8-44D0-AA79-3AC16FB38464}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{05E5B816-2B9C-47EE-B123-8A62B0E0725E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{05E5B816-2B9C-47EE-B123-8A62B0E0725E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{05E5B816-2B9C-47EE-B123-8A62B0E0725E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EA4FB5D0-FDA8-44D0-AA79-3AC16FB38464}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA4FB5D0-FDA8-44D0-AA79-3AC16FB38464}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA4FB5D0-FDA8-44D0-AA79-3AC16FB38464}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA4FB5D0-FDA8-44D0-AA79-3AC16FB38464}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
