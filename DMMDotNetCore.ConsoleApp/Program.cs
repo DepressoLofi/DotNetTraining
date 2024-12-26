@@ -1,4 +1,5 @@
 ﻿using DMMDotNetCore.ConsoleApp;
+using DMMDotNetCore.ConsoleApp.AdoDotNetExamples;
 using System.Data;
 using System.Data.SqlClient;
 
@@ -20,11 +21,21 @@ using System.Data.SqlClient;
 //adoDotNetExample.Delete(1);
 //adoDotNetExample.Edit(1);
 
+// #########################################
 
 
-DapperExample dapperExample = new DapperExample();
-dapperExample.Run();
 
+//DapperExample dapperExample = new DapperExample();
+//dapperExample.Run();
+
+
+// ###########################################
+
+//EFCoreExample eFCoreExample = new EFCoreExample();
+//eFCoreExample.Run();
+
+AdoDotNetExample adoDotNetExample = new AdoDotNetExample();
+adoDotNetExample.Read();
 
 
 Console.ReadKey();

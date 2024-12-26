@@ -1,4 +1,6 @@
 ﻿using Dapper;
+using DMMDotNetCore.ConsoleApp.Dtos;
+using DMMDotNetCore.ConsoleApp.Services;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -8,7 +10,7 @@ using System.Reflection.Metadata;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DMMDotNetCore.ConsoleApp
+namespace DMMDotNetCore.ConsoleApp.DapperExamples
 {
     internal class DapperExample
     {
@@ -75,7 +77,7 @@ namespace DMMDotNetCore.ConsoleApp
                    , @BlogAuthor
                    , @BlogContent)";
 
-            using IDbConnection db= new SqlConnection(ConnectionStrings.SqlConnectionStringBuilder.ConnectionString);
+            using IDbConnection db = new SqlConnection(ConnectionStrings.SqlConnectionStringBuilder.ConnectionString);
             int result = db.Execute(query, item);
             string message = result > 0 ? "Create successful" : "Create failed";
             Console.WriteLine(message);
@@ -86,7 +88,7 @@ namespace DMMDotNetCore.ConsoleApp
         {
             var item = new BlogDto
             {
-                BlogId = id,    
+                BlogId = id,
                 BlogTitle = title,
                 BlogAuthor = author,
                 BlogContent = content

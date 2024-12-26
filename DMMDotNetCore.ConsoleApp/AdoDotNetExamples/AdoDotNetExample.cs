@@ -7,7 +7,7 @@ using System.Reflection.Metadata;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DMMDotNetCore.ConsoleApp
+namespace DMMDotNetCore.ConsoleApp.AdoDotNetExamples
 {
     internal class AdoDotNetExample
     {
@@ -24,14 +24,14 @@ namespace DMMDotNetCore.ConsoleApp
         {
             SqlConnection connection = new SqlConnection(stringBuilder.ConnectionString);
             connection.Open();
-           
+
             string query = "select * from Tbl_Blog";
             SqlCommand command = new SqlCommand(query, connection);
             SqlDataAdapter adapter = new SqlDataAdapter(command);
             DataTable dt = new DataTable();
             adapter.Fill(dt);
             connection.Close();
-           
+
 
             foreach (DataRow dr in dt.Rows)
             {
@@ -57,7 +57,7 @@ namespace DMMDotNetCore.ConsoleApp
             adapter.Fill(dt);
             connection.Close();
 
-            if(dt.Rows.Count == 0)
+            if (dt.Rows.Count == 0)
             {
                 Console.WriteLine("No data Found");
                 return;

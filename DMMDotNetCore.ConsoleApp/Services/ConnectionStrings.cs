@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DMMDotNetCore.ConsoleApp
+namespace DMMDotNetCore.ConsoleApp.Services
 {
     internal class ConnectionStrings
     {
@@ -15,6 +15,7 @@ namespace DMMDotNetCore.ConsoleApp
             InitialCatalog = "DotNetTraining",
             UserID = "sa",
             Password = "pass",
+            TrustServerCertificate = true
         };
     }
 }
